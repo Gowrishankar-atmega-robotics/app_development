@@ -6,10 +6,8 @@ root = Tk();
 
 root.geometry("500x500");
 def inc():
-    global x ;
-    global y;
-    x = 500 
-    y = 500
+    global x , y ;
+    x, y = 500, 500 
     x+=100;
     y+=100;
     root.geometry(f'{x}x{y}')
