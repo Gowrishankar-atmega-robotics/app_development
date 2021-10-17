@@ -2,7 +2,6 @@ from tkinter import *
 from tkPDFViewer import tkPDFViewer as pdf
 from tkinter import filedialog
 import pdftotext
-
 root = Tk()
 root.geometry("500x500");
 root.title("PDFtoTEXT")
