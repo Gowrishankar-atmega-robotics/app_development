@@ -1,9 +1,13 @@
 from tkinter import *
 root = Tk();
-root.geometry("500x500");
+root.geometry("1080x607");
 root.title("MusicPlayer");
-#Button(root,text="play",width=10,height=5).pack(side="bottom",padx=(100,0), pady=(0,10));
-#Button(root,text="pause",width=10,height=5).pack(side="left",padx=(0,0),pady=(300,0))
-Button(root,text="play").place(x=250,y=400,width=100,height=50);
-Button(root,text='pause').place(x=150,y=400,width=100,height=50);
+img = PhotoImage(file="/home/atmegarobotics/Desktop/app_development/Tkinter/bg.png");
+start_icon = PhotoImage(file='/home/atmegarobotics/Desktop/app_development/Tkinter/start.png');
+pause_icon = PhotoImage(file='/home/atmegarobotics/Desktop/app_development/Tkinter/pause.png');
+
+bgl = Label(root,image=img);
+bgl.place(x=0,y=0,relwidth=1,relheight=1);
+Button(root,image=start_icon,bd = 6).place(x=550,y=470,width=64,height=64);
+Button(root,image=pause_icon,bd = 6).place(x=482,y=470,width=64,height=64);
 root.mainloop();
