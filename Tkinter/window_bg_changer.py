@@ -6,3 +6,5 @@ bgl.place(x=0,y=0,relwidth=1,relheight=1);
 root.geometry("1080x607");
 root.title("bg");
 root.mainloop();
+
+ 
